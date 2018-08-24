@@ -5,3 +5,9 @@ jenkins:
   scmCheckoutRetryCount: 3
   labelString: "master-label"
   noUsageStatistics: true
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+      - id: demoAdmin
+        password: ${adminpw}
